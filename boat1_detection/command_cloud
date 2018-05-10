@@ -1,0 +1,23 @@
+gcloud ml-engine jobs submit training boat1_object_detection \
+    --job-dir=gs://boat1/train \
+    --packages dist/object_detection-0.1.tar.gz,slim/dist/slim-0.1.tar.gz \
+    --module-name object_detection.train \
+    --region us-central1 \
+    --config /Users/brown/Desktop/boat1_detection/cloud.yml \
+    --runtime-version=1.2\
+    -- \
+    --train_dir=gs://boat1/train \
+    --pipeline_config_path=gs://boat1/data/SSD_Mobilenet_v1_boat1.config
+
+
+gcloud ml-engine jobs submit training boat1eval_object_detection \
+    --job-dir=gs://boat1/train \
+    --packages dist/object_detection-0.1.tar.gz,slim/dist/slim-0.1.tar.gz \
+    --module-name object_detection.eval \
+    --region us-central1 \
+    --scale-tier BASIC_GPU \
+    --runtime-version=1.2\
+    -- \
+    --checkpoint_dir=gs://boat1/train \
+    --eval_dir=gs://boat1/eval \
+    --pipeline_config_path=gs://boat1/data/SSD_Mobilenet_v1_boat1.config
