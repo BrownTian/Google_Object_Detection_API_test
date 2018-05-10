@@ -10,3 +10,7 @@ The experiment training takes about 8 hours running on the Google Cloud Platform
 
 
 ## High accuracy on test image
+![2](https://user-images.githubusercontent.com/36088488/39891206-8d3dc51a-5462-11e8-835f-10b64e3798ab.png)
+
+![3](https://user-images.githubusercontent.com/36088488/39891210-8f76be68-5462-11e8-8393-3216693b06bc.png)
+
