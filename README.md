@@ -14,3 +14,6 @@ The experiment training takes about 8 hours running on the Google Cloud Platform
 
 ![3](https://user-images.githubusercontent.com/36088488/39891210-8f76be68-5462-11e8-8393-3216693b06bc.png)
 
+If you have any question or comments, please feel free to contact me: bowentian2017@u.northwestern.edu
+
+The material in this repository is not to be distributed, copied, or reused without written permission from the author.
