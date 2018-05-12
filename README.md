@@ -1,4 +1,4 @@
-# Google_Object_Detection_API_test
+# Google Object Detection API test
 This Repo is a test on google object detection API. 
 
 I used 500 hundreds boat images and google object detection API to train a real-time object detection model SSD, to detect this boat.
